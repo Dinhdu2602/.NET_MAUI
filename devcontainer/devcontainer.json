@@ -1,0 +1,13 @@
+{
+  "name": "MAUI Development",
+  "dockerFile": "Dockerfile",
+  "extensions": [
+    "ms-dotnettools.csharp",
+    "ms-dotnettools.vscode-dotnet-runtime"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "dotnet tool install -g maui-check && maui-check",
+  "remoteUser": "vscode"
+}
